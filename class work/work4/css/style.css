@@ -1,0 +1,230 @@
+.container{
+    max-width: 1000px; 
+    margin: 0 auto; /*ширина авто*/
+    height: auto; /*высота авто*/
+    border: 1px solid red;
+    /* максимальный размер
+    отцентровка по середине
+    ширина 
+    рамка*/
+}
+
+.block{
+    width: 50%;
+    height: 300px;
+}
+
+.block.block--1{
+    background-color: red;
+    height: 500px;
+    /* выделяет за основу */
+}
+
+.block--2{
+    background-color: blue;
+}
+
+.block--3{
+    background-color: orange;
+} 
+/* .row{
+    height: 100%;
+    display: flex; */
+    /* подвид выравнивания в строку */
+
+    /* justify-content: space-between;  */
+    /* всегда элементы будут прижиматься по углам 
+    равные отсупы элементов считается основным*/
+
+    /* justify-content: center; */
+    /* выравнивание по центру */
+
+    /* justify-content: flex-end; */
+    /* выравнивание по правому краю */
+
+    /* justify-content: space-around; */
+    /* выравнивание по середине с отступами и с отступом по краям */
+
+    /* justify-content: space-evenly; */
+    /*везде одинаковые отступы */
+
+    /* align-items: stretch; */
+    /* выравнивание по оси Х */
+
+    /* align-items: center; */
+
+    /* align-items: flex-end; */
+    /* выравнивание по нижнему краю */
+
+    /* flex-wrap: nowrap; */
+    /* запрещает перенос элементов на строку */
+
+    /* flex-wrap: wrap; */
+    /* разрешает перенос элементов на строку */
+/* } */
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;  
+    margin: -10px;
+}
+
+.item-container{
+    /* width: 33.3%; по середине */
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.item{
+    background-color: red;
+    height: 300px;
+
+}
+
+/* АНИМАЦИЯ */
+.item:hover{
+    cursor: pointer;
+    background-color: green;
+    /* анимация при наведение */
+
+    transition: .3s;
+    /* время анимации перехода цвета, писать без нуля */
+    opacity: .5;
+    /* прозрачность */
+
+    /* transition: opacity .5s,background-color 1s; */
+
+    /* transition-timing-function:ease ; */
+    /* отвечает за ускорение или замедление анимации */
+
+    transition-delay: .1s;
+    /* задерка для перехода анимации */
+
+}
+
+.element{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    transition: .5s;
+    opacity: 0;
+    /* элемент к которому обращаемся при наведении */
+}
+
+.anim{
+    height: 500px;
+    width: 500px;
+    background-color: chocolate;
+    margin: 0 auto;
+    margin-top: 150px;
+    /* transform: rotate(45deg); */
+    /* переворачивает на градусы */
+
+    /* transform: scale(2); */
+    /* увеличивает */
+
+    /* transform: translate(50px, 100px); */
+    /* передвигает по ос Х и У */
+
+    transition: .3s;
+    animation: rotating 10s ease-in-out infinite;
+
+}
+
+
+/* через точку после анимации обращаемся к элементу принаведение */
+.anim:hover .element{
+    transform: translateX(500px);
+    opacity: 1;
+    /* остается коричневый появляется временно красный при наведение */
+
+}
+
+/* бесконечная анимация
+будет крутиться от 0 до 360 */
+
+@keyframes rotating{
+    from{
+        transform: rotate(0deg); 
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+table {
+    margin-top: 150px;
+    border-spacing: 0;
+}
+td,
+th{
+    border: 1px solid blue;
+}
+
+
+
+/* Домашня работа */
+
+header, .menu{
+    background-color: rgba(104, 12, 12, 0.534);
+    height: 150px;
+    /* Задний фон
+    Высота */
+}
+.menu{
+    margin: 20px 0;
+    /* отступ */
+
+}
+.main-row{
+    display: flex;
+    /* выравнивание по середине */
+}
+
+.main-content-block{
+    height: 150px;
+    background-color: rgba(100, 0, 131, 0.514);
+    margin: 5px 0;
+}
+.side-bar-block{
+    height: 150px;
+    background-color: brown;
+
+}
+
+.side-bar{
+    height: 300px;
+    margin-right: 20px;
+}
+
+.main-content{
+    width: 100%; 
+    /* высота 100% */
+    background-color: orange;
+    padding: 15px;
+    /* внутрение отстцпы */
+    box-sizing: border-box;
+    /* запрещает перемещение с падингами */
+
+
+}
+.side-bar-right{
+    width: 150px;
+    height: auto;
+    background-color: red;
+    margin-left: 20px;
+    
+}
+.footer {
+    width: auto;
+    height: 200px;
+    background-color: rgba(155, 1, 1, 0.603);
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+
+
+
