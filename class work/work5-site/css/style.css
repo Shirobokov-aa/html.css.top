@@ -1,0 +1,10 @@
+/* .overflow{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgb(220, 220, 255);
+
+    overflow: auto;
+    что бы текст поместился в блок с прокруткой
+
+} */
