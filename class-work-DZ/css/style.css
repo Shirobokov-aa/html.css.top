@@ -1,0 +1,59 @@
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 96%;
+}
+.header__row{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header{
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+
+}
+
+.header__left-icon, .header__right-icon{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.header-right, .header-left{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+}
+.header__left-icon{
+    margin-right: 10px;
+
+}
+.header__right-icon{
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    padding-top: 20px;
+
+}
+.menu{
+
+    width: 200px;
+    height: 400px;
+    background-color: grey;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+.post-item{
+    display: flex;
+    align-items: center;
+
+}
+.post-item>div{
+    display: flex;
+    align-items: center;
+    
+}

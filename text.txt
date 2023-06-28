@@ -1,0 +1,14 @@
+<body>
+    <head class="header">
+        <div class="container">             всегда после шапки контейнер
+            
+        </div>
+    </head>
+</body>
+
+
+.container{
+    max-width: 1000px;                      всегда МАКсимальня ширина
+    margin: 0 auto;                         середина
+    width: 96%;                             отступы по 2%
+}

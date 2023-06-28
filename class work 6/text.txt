@@ -1,0 +1,67 @@
+закрепление пройденого матерьяла
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+    </div>
+</body>
+</html>
+
+если мы хотим что то показывать для того что бы регулировать порядок
+
+.flex{
+    display: flex;
+    justify-content: space-between;         - выравниваем по краям
+    align-items: stretch;                   - по умолчаннию \ выравние по оси \ использует всю высоту родителя, если оно не указано
+    align-items: center;                    - выравнивание элемента по центру
+    flex-direction: column;                 - все элементы выравниваются в колонку
+    flex-direction: column-reverse;         - выводит элементы в обратном порядке
+    flex-direction: row-reverse;            - выводит с обратной стороны
+    flex-wrap: ;                            - не понял, надо прочитать!!!!!!
+    display: grid;                          - создает сетку
+    grid-template-columns: 1fr 1fr 1fr;     - вертикально
+    grid-template-rows: 200px 400px 200px;  - горизонтально
+    gap: 10px;                              - отступы между элеменами
+    
+
+
+
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 1px;                     - исправляет display flex при заполнение/ свойсвто помощи
+    
+}
+.item-1{
+    background-color: brown;
+    flex-shrink: 0;                     - запрещает элементу сужаться - толковая кнопка
+
+
+}
+.item-2{
+    align-self: flex-end;               - можно выбрать определеный блок
+    height: 400px;                      - добавили высоту
+    background-color: yellow;
+    order: -1;                         - если мы хотим что то показывать для того что бы регулировать порядок| все находятся позади
+    order: 1;                          - будут по центру
+
+
+
+}
+.item-3{
+    background-color: cadetblue;
+}
