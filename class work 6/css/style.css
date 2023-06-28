@@ -1,0 +1,12 @@
+.test{
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.display{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    display: inline-block;
+}
