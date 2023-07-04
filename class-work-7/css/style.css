@@ -1,0 +1,55 @@
+label input{
+    display: none;
+    
+}
+label input + span{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+/* label input:checked+span::before{
+    background-color: red;
+
+} */
+
+label input + span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px;
+    width: 10px;
+    border: 1px solid rosybrown;
+    top: 50%;
+    /* margin-top: -5px; */
+    transform: translateY(-50%);
+}
+
+label input:checked+span::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: brown;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    left: 3px;
+        
+}
+image{
+    max-width: 200px;
+}
+
+input:valid{
+
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    width: 100px;
+}
